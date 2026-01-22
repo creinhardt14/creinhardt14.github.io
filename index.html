@@ -21,47 +21,44 @@
       scroll-behavior: smooth;
     }
 
+    /* HEADER */
+    header {
+      background: var(--blue);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      margin: 0.5rem 0;
+    }
+
+    header img {
+      height: 50px;
+      vertical-align: middle;
+    }
+
     /* NAVBAR */
     nav {
-      position: sticky;
-      top: 0;
-      background: var(--blue);
+      margin-top: 1rem;
       display: flex;
       justify-content: center;
       gap: 2rem;
-      padding: 1rem;
-      z-index: 1000;
     }
 
     nav a {
       color: white;
       text-decoration: none;
       font-weight: 600;
+      cursor: pointer;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    /* HEADER */
-    header {
-      background: var(--blue);
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    header img {
-      height: 50px;
-    }
-
-    header h1 {
-      font-size: 1.6rem;
-      margin: 0;
-    }
-
+    /* SECTIONS */
     section {
       padding: 3rem 1.5rem;
       max-width: 900px;
@@ -157,19 +154,20 @@
 
 <body>
 
-<!-- NAVIGATION BAR -->
-<nav>
-  <a href="#overview">Study Overview</a>
-  <a href="#signup">Sign Up</a>
-  <a href="#who">Who We Are</a>
-  <a href="#research">About the Research</a>
-  <a href="#faq">FAQ</a>
-  <a href="#ethics">Ethics</a>
-</nav>
-
+<!-- HEADER -->
 <header>
-  <img src="images/logo.png" alt="Study Logo" />
+  <img src="images/logo.png" alt="Study Logo">
   <h1>Psychology Research Study</h1>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <a href="#overview">Study Overview</a>
+    <a href="#signup">Sign Up</a>
+    <a href="#who">Who We Are</a>
+    <a href="#research">About the Research</a>
+    <a href="#faq">FAQ</a>
+    <a href="#ethics">Ethics</a>
+  </nav>
 </header>
 
 <!-- STUDY OVERVIEW -->
@@ -187,4 +185,106 @@
     <li><strong>Part 1:</strong> Consent and demographic questionnaire</li>
     <li><strong>Part 2:</strong> Behavioral task (approx. 20 minutes)</li>
     <li><strong>Part 3:</strong> Questionnaire on perception and decision-making</li>
-    <li><strong>Part 4:</
+    <li><strong>Part 4:</strong> Follow-up task after a delay</li>
+    <li><strong>Part 5:</strong> Final questionnaire and debriefing</li>
+  </ul>
+</section>
+
+<!-- SIGN UP -->
+<section id="signup">
+  <div class="signup">
+    <h2>Sign Up to Participate</h2>
+    <p>Enter your email address and we will send you an invitation to participate.</p>
+
+    <form action="mailto:researchgroup@university.edu" method="post" enctype="text/plain">
+      <input type="email" name="email" placeholder="your.email@example.com" required />
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <p style="font-size:0.9rem; margin-top:1rem;">
+      Your email will only be used to contact you about this study.
+    </p>
+
+    <!-- Consent PDF -->
+    <a href="docs/consent-form.pdf" class="download-btn" download>
+      📄 Download Informed Consent Form (PDF)
+    </a>
+  </div>
+</section>
+
+<!-- WHO ARE WE -->
+<section id="who">
+  <h2>Who Are We?</h2>
+  <p>
+    We are a research group from the Department of Psychology investigating cognitive mechanisms
+    underlying perception, learning, and decision-making.
+  </p>
+
+  <img src="images/research-group.JPG" alt="Research Group" class="responsive" />
+
+  <p>
+    Learn more about our department:
+    <a href="https://www.psychology.ucla.edu/" target="_blank">Department of Psychology</a>
+  </p>
+</section>
+
+<!-- ABOUT THE RESEARCH -->
+<section id="research">
+  <h2>About the Research</h2>
+  <p>
+    This research is grounded in contemporary cognitive theory, combining models of information
+    processing, learning, and behavioral adaptation. By examining responses across multiple stages,
+    we aim to better understand how individuals integrate feedback over time.
+  </p>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <h4>❓ I cannot access the study link</h4>
+  <p>
+    Make sure your browser allows pop-ups and location access if required. Chrome is recommended.
+  </p>
+
+  <h4>❓ The task does not load properly</h4>
+  <p>
+    Try refreshing the page, disabling browser extensions, or switching browsers.
+  </p>
+
+  <h4>❓ I made a mistake during the task</h4>
+  <p>
+    Don’t worry — the study accounts for errors. Continue as instructed unless told otherwise.
+  </p>
+
+  <h4>❓ Can I pause and continue later?</h4>
+  <p>
+    Yes, unless stated otherwise in the task instructions.
+  </p>
+</section>
+
+<!-- ETHICS -->
+<section id="ethics">
+  <h2>Ethics Approval</h2>
+  <p>
+    This study has been reviewed and approved by the Institutional Review Board (IRB)
+    / Ethics Committee of <strong>Your University</strong>.
+  </p>
+
+  <p>
+    Approval Number: <strong>2025-PSY-042</strong><br>
+    Date of Approval: <strong>January 15, 2025</strong>
+  </p>
+
+  <p>
+    All procedures comply with the ethical standards of the Declaration of Helsinki.
+    Participation is voluntary and participants may withdraw at any time without penalty.
+  </p>
+</section>
+
+<footer>
+  © 2026 Psychology Research Group · All rights reserved
+</footer>
+
+</body>
+</html>
