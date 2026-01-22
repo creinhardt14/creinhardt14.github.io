@@ -1,218 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Research Study Participation</title>
+  <meta charset="UTF-8">
+  <title>Research Group</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    :root {
-      --blue: #1e40af;
-      --light-blue: #eff6ff;
-      --text: #1f2937;
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fafb;
+      color: #1f2937;
+      text-align: center;
     }
 
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--text);
-      background: #ffffff;
+    h1 {
+      color: #1e40af; /* blue heading */
+      padding: 2rem 1rem 1rem;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
       line-height: 1.6;
     }
 
-    header {
-      background: var(--blue);
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    header img {
-      height: 40px;
-    }
-
-    header h1 {
-      font-size: 1.4rem;
-      margin: 0;
-    }
-
-    section {
-      padding: 3rem 1.5rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section:nth-child(even) {
-      background: var(--light-blue);
-    }
-
-    h2 {
-      color: var(--blue);
-      margin-bottom: 1rem;
-    }
-
-    img.responsive {
+    img {
       width: 100%;
       max-width: 700px;
-      display: block;
-      margin: 1.5rem auto;
       border-radius: 8px;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    .study-parts li {
-      margin-bottom: 0.5rem;
-    }
-
-    .signup {
-      background: var(--blue);
-      color: white;
-      border-radius: 12px;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .signup input {
-      padding: 0.7rem;
-      width: 250px;
-      max-width: 80%;
-      border-radius: 6px;
-      border: none;
-      margin-right: 0.5rem;
-    }
-
-    .signup button {
-      padding: 0.7rem 1.2rem;
-      border-radius: 6px;
-      border: none;
-      background: white;
-      color: var(--blue);
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    .signup button:hover {
-      background: #e0e7ff;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #6b7280;
-    }
-
-    a {
-      color: var(--blue);
-      font-weight: 500;
+      display: block;
+      margin: 0 auto 2rem;
     }
   </style>
 </head>
-
 <body>
 
-<header>
-  <img src="images/logo.png" alt="Study Logo" />
-  <h1>Psychology Research Study</h1>
-</header>
-
-<!-- STUDY OVERVIEW -->
-<section>
-  <h2>Study Overview</h2>
+  <h1>Our Research Group</h1>
   <p>
-    This study investigates cognitive and behavioral processes across multiple experimental stages.
-    Participation involves five structured parts completed online over several sessions.
+    We are a team from the Department of Psychology conducting studies on cognitive processes
+    and decision-making. Here’s a picture of our group!
   </p>
 
-  <img src="images/study-design.png" alt="Study Design" class="responsive" />
-
-  <h3>Study Parts</h3>
-  <ul class="study-parts">
-    <li><strong>Part 1:</strong> Consent and demographic questionnaire</li>
-    <li><strong>Part 2:</strong> Behavioral task (approx. 20 minutes)</li>
-    <li><strong>Part 3:</strong> Questionnaire on perception and decision-making</li>
-    <li><strong>Part 4:</strong> Follow-up task after a delay</li>
-    <li><strong>Part 5:</strong> Final questionnaire and debriefing</li>
-  </ul>
-</section>
-
-<!-- SIGN UP -->
-<section>
-  <div class="signup">
-    <h2>Sign Up to Participate</h2>
-    <p>Enter your email address and we will send you an invitation to participate.</p>
-
-    <form action="mailto:researchgroup@university.edu" method="post" enctype="text/plain">
-      <input type="email" name="email" placeholder="your.email@example.com" required />
-      <button type="submit">Sign Up</button>
-    </form>
-
-    <p style="font-size:0.9rem; margin-top:1rem;">
-      Your email will only be used to contact you about this study.
-    </p>
-  </div>
-</section>
-
-<!-- WHO ARE WE -->
-<section>
-  <h2>Who Are We?</h2>
-  <p>
-    We are a research group from the Department of Psychology investigating cognitive mechanisms
-    underlying perception, learning, and decision-making.
-  </p>
-
-  <img src="images/research-group.jpg" alt="Research Group" class="responsive" />
-
-  <p>
-    Learn more about our department:
-    <a href="https://www.psychology.ucla.edu/" target="_blank">Department of Psychology</a>
-  </p>
-</section>
-
-<!-- ABOUT THE RESEARCH -->
-<section>
-  <h2>About the Research</h2>
-  <p>
-    This research is grounded in contemporary cognitive theory, combining models of information
-    processing, learning, and behavioral adaptation. By examining responses across multiple stages,
-    we aim to better understand how individuals integrate feedback over time.
-  </p>
-</section>
-
-<!-- FAQ -->
-<section>
-  <h2>Frequently Asked Questions</h2>
-
-  <h4>❓ I cannot access the study link</h4>
-  <p>
-    Make sure your browser allows pop-ups and location access if required. Chrome is recommended.
-  </p>
-
-  <h4>❓ The task does not load properly</h4>
-  <p>
-    Try refreshing the page, disabling browser extensions, or switching browsers.
-  </p>
-
-  <h4>❓ I made a mistake during the task</h4>
-  <p>
-    Don’t worry — the study accounts for errors. Continue as instructed unless told otherwise.
-  </p>
-
-  <h4>❓ Can I pause and continue later?</h4>
-  <p>
-    Yes, unless stated otherwise in the task instructions.
-  </p>
-</section>
-
-<footer>
-  © 2026 Psychology Research Group · All rights reserved
-</footer>
+  <!-- Research Group Image -->
+  <img src="images/research-group.JPG" alt="Research Group">
 
 </body>
 </html>
+
 
