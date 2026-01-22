@@ -2,133 +2,135 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <title>On Call Study – Psychology Research</title>
+  <title>Studie „On Call“ – Universität des Saarlandes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Elegant font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --blue: #1e40af;
-      --light-blue: #eff6ff;
+      --blue: #355C7D;
+      --light-blue: #f1f5f9;
       --text: #1f2937;
     }
 
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'Inter', system-ui, sans-serif;
       color: var(--text);
       background: #ffffff;
-      line-height: 1.6;
+      line-height: 1.7;
       scroll-behavior: smooth;
     }
 
-    /* HEADER */
     header {
       display: flex;
       align-items: center;
-      justify-content: start;
+      gap: 1.5rem;
       background: var(--blue);
       color: white;
-      padding: 1rem 2rem;
-      gap: 1.5rem;
+      padding: 1.5rem 2rem;
       flex-wrap: wrap;
     }
 
     header img {
-      height: 100px;
+      height: 90px;
     }
 
     header h1 {
-      font-size: 2rem;
+      font-size: 1.6rem;
       margin: 0;
+      font-weight: 600;
     }
 
-    /* STICKY NAVBAR */
     nav {
       position: sticky;
       top: 0;
+      z-index: 1000;
       background: var(--blue);
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-      z-index: 1000;
+      gap: 1.8rem;
+      padding: 0.9rem 1rem;
       flex-wrap: wrap;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      font-weight: 600;
-      cursor: pointer;
+      font-weight: 500;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    /* SECTIONS */
     section {
-      padding: 3rem 1.5rem;
+      padding: 3.5rem 1.5rem;
       max-width: 900px;
       margin: auto;
     }
 
-    section:nth-child(even) {
+    section:nth-of-type(even) {
       background: var(--light-blue);
     }
 
     h2 {
       color: var(--blue);
       margin-bottom: 1rem;
+      font-size: 1.5rem;
     }
 
     h3 {
-      margin-top: 1rem;
+      margin-top: 2rem;
+      font-size: 1.2rem;
     }
 
     img.responsive {
       width: 100%;
-      max-width: 700px;
+      max-width: 800px;
       display: block;
-      margin: 1.5rem auto;
-      border-radius: 8px;
+      margin: 2rem auto 0.5rem;
+      border-radius: 12px;
     }
 
     .img-caption {
       text-align: center;
       font-size: 0.9rem;
-      margin-top: 0.5rem;
       color: #374151;
+      margin-bottom: 2rem;
     }
 
     ul {
       padding-left: 1.2rem;
     }
 
-    .study-parts li {
+    li {
       margin-bottom: 0.5rem;
     }
 
-    /* SIGN UP */
     .signup {
       background: var(--blue);
       color: white;
-      border-radius: 12px;
-      padding: 2rem;
+      border-radius: 14px;
+      padding: 2.5rem;
       text-align: center;
     }
 
     .signup input {
       padding: 0.7rem;
-      width: 250px;
-      max-width: 80%;
+      width: 260px;
+      max-width: 90%;
       border-radius: 6px;
       border: none;
       margin-right: 0.5rem;
     }
 
     .signup button {
-      padding: 0.7rem 1.2rem;
+      padding: 0.7rem 1.4rem;
       border-radius: 6px;
       border: none;
       background: white;
@@ -137,15 +139,10 @@
       cursor: pointer;
     }
 
-    .signup button:hover {
-      background: #e0e7ff;
-    }
-
-    /* DOWNLOAD BUTTON */
     .download-btn {
       display: inline-block;
-      margin-top: 1rem;
-      padding: 0.7rem 1.4rem;
+      margin-top: 1.5rem;
+      padding: 0.7rem 1.5rem;
       background: var(--blue);
       color: white;
       border-radius: 8px;
@@ -153,155 +150,110 @@
       font-weight: 600;
     }
 
-    .download-btn:hover {
-      background: #1e3a8a;
-    }
-
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 2.5rem 1rem;
       font-size: 0.9rem;
       color: #6b7280;
-    }
-
-    a {
-      color: var(--blue);
-      font-weight: 500;
     }
   </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
-  <img src="images/LOGO.PNG" alt="Study Logo">
-  <h1>Studie "On Call" zur Bewältigung von Belastungen in Risikoberufen</h1>
+  <img src="images/LOGO.PNG" alt="Studienlogo">
+  <h1>Studie „On Call“ zur Bewältigung von Belastungen in Risikoberufen</h1>
 </header>
 
-<!-- NAVIGATION BAR -->
 <nav>
-  <a href="#overview">Studieninformationen</a>
-  <a href="#signup">Sign Up</a>
-  <a href="#who">Forschungsteam</a>
-  <a href="#study-process">Ablauf der Studie</a>
-  <a href="#faq">FAQ</a>
+  <a href="#info">Studieninfo</a>
+  <a href="#ablauf">Ablauf</a>
+  <a href="#signup">Teilnahme</a>
+  <a href="#team">Team</a>
+  <a href="#faq">Q&A</a>
   <a href="#ethics">Ethik</a>
 </nav>
 
-<!-- STUDY INFO -->
-<section id="overview">
-  <h2>Infomaterial & Studieninformationen</h2>
+<section id="info">
+  <h2>Informationen zur Studie</h2>
   <p>
-    Wir sind ein Forschungsteam an der Universität des Saarlandes und führen eine wissenschaftliche Studie
-    zum Umgang mit belastenden und potenziell traumatischen Ereignissen im beruflichen Alltag durch.
-    Für dieses Forschungsprojekt suchen wir Personen, die in sogenannten High-Risk-Berufen arbeiten –
-    z.B. Polizei, Feuerwehr oder Rettungsdienst.
+    Wir sind ein Forschungsteam an der Universität des Saarlandes und untersuchen,
+    wie Menschen in High-Risk-Berufen mit belastenden und potenziell traumatischen
+    Arbeitssituationen umgehen.
   </p>
-
-  <p>
-    Die Studie untersucht, wie Menschen in diesen Berufen mit emotional herausfordernden Situationen umgehen
-    und welche Faktoren das psychische Wohlbefinden beeinflussen. Die Datenerhebung erfolgt online
-    über SoSciSurvey und über die Smartphone-App SEMA3.
-  </p>
-
-  <a href="docs/consent-form.pdf" class="download-btn" download>
-    📄 Einverständniserklärung herunterladen
-  </a>
 </section>
 
-<!-- SIGN UP -->
+<section id="ablauf">
+  <h2>Ablauf der Studie</h2>
+
+  <!-- STUDY DESIGN IMAGE -->
+  <img src="images/Ablauf.png" alt="Schematische Darstellung des Studienablaufs" class="responsive">
+  <div class="img-caption">
+    Überblick über den Studienablauf („On Call“-Studie)
+  </div>
+
+  <h3>1. Online-Erstbefragung (ca. 60 Minuten)</h3>
+  <ul>
+    <li>Soziodemografische Angaben</li>
+    <li>Arbeitsbezogener Stress</li>
+    <li>Emotionale Reaktionen und Coping</li>
+    <li>Psychisches Wohlbefinden</li>
+    <li>Optionale offene Fragen</li>
+  </ul>
+
+  <h3>2. Smartphone-Befragungen (EMA)</h3>
+  <ul>
+    <li>Alltagsbefragung über 7 Tage</li>
+    <li>Erfassung potenziell traumatischer Ereignisse</li>
+    <li>Weitere 7-tägige Befragung nach einem Ereignis</li>
+  </ul>
+
+  <h3>3. Follow-Ups</h3>
+  <p>
+    Weitere Online-Befragungen nach 3 und 6 Monaten.
+  </p>
+</section>
+
 <section id="signup">
   <div class="signup">
-    <h2>Teilnahme anmelden</h2>
-    <p>Geben Sie Ihre E-Mail-Adresse ein, um die Einladung zur Teilnahme zu erhalten.</p>
+    <h2>Teilnahme</h2>
+    <p>Geben Sie Ihre E-Mail-Adresse an, um eine Einladung zu erhalten.</p>
 
-    <form action="mailto:researchgroup@university.edu" method="post" enctype="text/plain">
-      <input type="email" name="email" placeholder="Ihre E-Mail" required />
-      <button type="submit">Sign Up</button>
+    <form action="mailto:traumastudy2026@gmail.com" method="post" enctype="text/plain">
+      <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+      <button type="submit">Anmelden</button>
     </form>
+
+    <a href="docs/consent-form.pdf" class="download-btn" download>
+      📄 Einverständniserklärung herunterladen
+    </a>
   </div>
 </section>
 
-<!-- WHO ARE WE -->
-<section id="who">
+<section id="team">
   <h2>Forschungsteam</h2>
-  <p>
-    Wir sind ein Forschungsteam an der Universität des Saarlandes und führen diese Studie durch.
-  </p>
-
-  <img src="images/research-group.JPG" alt="Research Group" class="responsive" />
+  <img src="images/research-group.JPG" alt="Forschungsteam" class="responsive">
   <div class="img-caption">Carlotta Reinhardt und Team</div>
 </section>
 
-<!-- STUDY PROCESS -->
-<section id="study-process">
-  <h2>Ablauf der Studie</h2>
-
-  <h3>1. Online-Erstbefragung</h3>
-  <ul>
-    <li>Erfassung von soziodemografischen Angaben</li>
-    <li>Berufliche Rahmenbedingungen und arbeitsbezogener Stress</li>
-    <li>Emotionale Reaktionen und Bewältigungsweisen</li>
-    <li>Psychisches Wohlbefinden und Symptome von Stress, Angst oder Trauma</li>
-    <li>Optionale Fragen zu belastenden oder moralisch schwierigen Arbeitssituationen</li>
-  </ul>
-  <p>Bearbeitungsdauer: ca. 60 Minuten</p>
-
-  <h3>2. Befragungen per Smartphone-App (EMA)</h3>
-  <ul>
-    <li>Alltagsbefragung: 7 Tage, mehrere kurze Fragen pro Tag</li>
-    <li>Erfassung potenziell traumatischer Ereignisse über 3 Monate</li>
-    <li>Alltagsbefragung nach einem Ereignis: 7 Tage</li>
-  </ul>
-
-  <h3>3. Follow-Up-Befragungen</h3>
-  <p>
-    Nach 3 und 6 Monaten erhalten Sie per E-Mail einen Link zu weiteren Online-Befragungen.
-  </p>
-
-  <h3>Mögliche Belastungen</h3>
-  <p>
-    Die Teilnahme kann kurzfristige psychische Belastungen auslösen. Bei akuter Belastung wenden Sie sich bitte an
-    die Telefonseelsorge: 0800 111 0111 oder kontaktieren Sie uns: traumastudy2026@gmail.com
-  </p>
-
-  <h3>Datenschutz und Vertraulichkeit</h3>
-  <p>
-    Alle erhobenen Daten werden vertraulich, pseudonymisiert und anonymisiert verarbeitet. Kontaktdaten
-    werden getrennt von den Forschungsdaten gespeichert und nach Abschluss der Studie gelöscht.
-  </p>
-
-  <h3>Freiwilliger Teil der Studie</h3>
-  <p>
-    Möglichkeit, besonders belastende Ereignisse vertiefend zu beschreiben. Dauer: ca. 15 Minuten.
-    Teilnahme ist freiwillig und anonymisiert.
-  </p>
-</section>
-
-<!-- FAQ -->
 <section id="faq">
-  <h2>FAQ</h2>
-  <p><strong>Worum geht es in der Studie?</strong> Online-Studie zu Stressbewältigung in High-Risk-Berufen.</p>
-  <p><strong>Wen suchen wir?</strong> Personen in Berufen mit regelmäßig belastenden Situationen.</p>
-  <p><strong>Was erwartet Sie?</strong> EMA-Befragungen über mehrere Wochen plus längere Fragebögen.</p>
-  <p><strong>Was bieten wir?</strong> Einblicke in Ergebnisse, persönliche Profile, monetäre Vergütung.</p>
-  <p><strong>Warum machen wir das?</strong> Forschung zu Coping-Strategien, Verbesserung von Ausbildung und Interventionen.</p>
-  <p><strong>Wann beginnt die Studie?</strong> Frühjahr 2026</p>
+  <h2>Fragen & Antworten</h2>
+  <p><strong>Worum geht es?</strong><br>Stress und Bewältigung in High-Risk-Berufen.</p>
+  <p><strong>Wann beginnt die Studie?</strong><br>Frühjahr 2026.</p>
 </section>
 
-<!-- ETHICS -->
 <section id="ethics">
-  <h2>Ethik & Genehmigungen</h2>
+  <h2>Ethik</h2>
   <p>
-    Die Studie wurde von der Ethikkommission der Universität des Saarlandes geprüft und genehmigt.
+    Die Studie wurde durch die zuständige Ethikkommission geprüft und genehmigt
+    und entspricht den ethischen Standards der Deklaration von Helsinki.
   </p>
 </section>
 
 <footer>
-  © 2026 Universität des Saarlandes – Psychology Research Group · Alle Rechte vorbehalten
+  © 2026 Universität des Saarlandes · Psychologische Forschung
 </footer>
 
 </body>
 </html>
-
