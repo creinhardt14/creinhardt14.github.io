@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <title>Psychology Research Study</title>
+  <title>On Call Study – Psychology Research</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -23,28 +23,36 @@
 
     /* HEADER */
     header {
+      display: flex;
+      align-items: center;
+      justify-content: start;
       background: var(--blue);
       color: white;
       padding: 1rem 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 1.6rem;
-      margin: 0.5rem 0;
+      gap: 1.5rem;
+      flex-wrap: wrap;
     }
 
     header img {
-      height: 50px;
-      vertical-align: middle;
+      height: 100px;
     }
 
-    /* NAVBAR */
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    /* STICKY NAVBAR */
     nav {
-      margin-top: 1rem;
+      position: sticky;
+      top: 0;
+      background: var(--blue);
       display: flex;
       justify-content: center;
       gap: 2rem;
+      padding: 1rem;
+      z-index: 1000;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -74,12 +82,23 @@
       margin-bottom: 1rem;
     }
 
+    h3 {
+      margin-top: 1rem;
+    }
+
     img.responsive {
       width: 100%;
       max-width: 700px;
       display: block;
       margin: 1.5rem auto;
       border-radius: 8px;
+    }
+
+    .img-caption {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      color: #374151;
     }
 
     ul {
@@ -157,134 +176,132 @@
 <!-- HEADER -->
 <header>
   <img src="images/LOGO.PNG" alt="Study Logo">
-  <h1>Psychology Research Study</h1>
-
-  <!-- NAVIGATION BAR -->
-  <nav>
-    <a href="#overview">Study Overview</a>
-    <a href="#signup">Sign Up</a>
-    <a href="#who">Who We Are</a>
-    <a href="#research">About the Research</a>
-    <a href="#faq">FAQ</a>
-    <a href="#ethics">Ethics</a>
-  </nav>
+  <h1>Studie "On Call" zur Bewältigung von Belastungen in Risikoberufen</h1>
 </header>
 
-<!-- STUDY OVERVIEW -->
+<!-- NAVIGATION BAR -->
+<nav>
+  <a href="#overview">Studieninformationen</a>
+  <a href="#signup">Sign Up</a>
+  <a href="#who">Forschungsteam</a>
+  <a href="#study-process">Ablauf der Studie</a>
+  <a href="#faq">FAQ</a>
+  <a href="#ethics">Ethik</a>
+</nav>
+
+<!-- STUDY INFO -->
 <section id="overview">
-  <h2>Study Overview</h2>
+  <h2>Infomaterial & Studieninformationen</h2>
   <p>
-    This study investigates cognitive and behavioral processes across multiple experimental stages.
-    Participation involves five structured parts completed online over several sessions.
+    Wir sind ein Forschungsteam an der Universität des Saarlandes und führen eine wissenschaftliche Studie
+    zum Umgang mit belastenden und potenziell traumatischen Ereignissen im beruflichen Alltag durch.
+    Für dieses Forschungsprojekt suchen wir Personen, die in sogenannten High-Risk-Berufen arbeiten –
+    z.B. Polizei, Feuerwehr oder Rettungsdienst.
   </p>
 
-  <img src="images/study-design.png" alt="Study Design" class="responsive" />
+  <p>
+    Die Studie untersucht, wie Menschen in diesen Berufen mit emotional herausfordernden Situationen umgehen
+    und welche Faktoren das psychische Wohlbefinden beeinflussen. Die Datenerhebung erfolgt online
+    über SoSciSurvey und über die Smartphone-App SEMA3.
+  </p>
 
-  <h3>Study Parts</h3>
-  <ul class="study-parts">
-    <li><strong>Part 1:</strong> Consent and demographic questionnaire</li>
-    <li><strong>Part 2:</strong> Behavioral task (approx. 20 minutes)</li>
-    <li><strong>Part 3:</strong> Questionnaire on perception and decision-making</li>
-    <li><strong>Part 4:</strong> Follow-up task after a delay</li>
-    <li><strong>Part 5:</strong> Final questionnaire and debriefing</li>
-  </ul>
+  <a href="docs/consent-form.pdf" class="download-btn" download>
+    📄 Einverständniserklärung herunterladen
+  </a>
 </section>
 
 <!-- SIGN UP -->
 <section id="signup">
   <div class="signup">
-    <h2>Sign Up to Participate</h2>
-    <p>Enter your email address and we will send you an invitation to participate.</p>
+    <h2>Teilnahme anmelden</h2>
+    <p>Geben Sie Ihre E-Mail-Adresse ein, um die Einladung zur Teilnahme zu erhalten.</p>
 
     <form action="mailto:researchgroup@university.edu" method="post" enctype="text/plain">
-      <input type="email" name="email" placeholder="your.email@example.com" required />
+      <input type="email" name="email" placeholder="Ihre E-Mail" required />
       <button type="submit">Sign Up</button>
     </form>
-
-    <p style="font-size:0.9rem; margin-top:1rem;">
-      Your email will only be used to contact you about this study.
-    </p>
-
-    <!-- Consent PDF -->
-    <a href="docs/consent-form.pdf" class="download-btn" download>
-      📄 Download Informed Consent Form (PDF)
-    </a>
   </div>
 </section>
 
 <!-- WHO ARE WE -->
 <section id="who">
-  <h2>Who Are We?</h2>
+  <h2>Forschungsteam</h2>
   <p>
-    We are a research group from the Department of Psychology investigating cognitive mechanisms
-    underlying perception, learning, and decision-making.
+    Wir sind ein Forschungsteam an der Universität des Saarlandes und führen diese Studie durch.
   </p>
 
   <img src="images/research-group.JPG" alt="Research Group" class="responsive" />
-
-  <p>
-    Learn more about our department:
-    <a href="https://www.psychology.ucla.edu/" target="_blank">Department of Psychology</a>
-  </p>
+  <div class="img-caption">Carlotta Reinhardt und Team</div>
 </section>
 
-<!-- ABOUT THE RESEARCH -->
-<section id="research">
-  <h2>About the Research</h2>
+<!-- STUDY PROCESS -->
+<section id="study-process">
+  <h2>Ablauf der Studie</h2>
+
+  <h3>1. Online-Erstbefragung</h3>
+  <ul>
+    <li>Erfassung von soziodemografischen Angaben</li>
+    <li>Berufliche Rahmenbedingungen und arbeitsbezogener Stress</li>
+    <li>Emotionale Reaktionen und Bewältigungsweisen</li>
+    <li>Psychisches Wohlbefinden und Symptome von Stress, Angst oder Trauma</li>
+    <li>Optionale Fragen zu belastenden oder moralisch schwierigen Arbeitssituationen</li>
+  </ul>
+  <p>Bearbeitungsdauer: ca. 60 Minuten</p>
+
+  <h3>2. Befragungen per Smartphone-App (EMA)</h3>
+  <ul>
+    <li>Alltagsbefragung: 7 Tage, mehrere kurze Fragen pro Tag</li>
+    <li>Erfassung potenziell traumatischer Ereignisse über 3 Monate</li>
+    <li>Alltagsbefragung nach einem Ereignis: 7 Tage</li>
+  </ul>
+
+  <h3>3. Follow-Up-Befragungen</h3>
   <p>
-    This research is grounded in contemporary cognitive theory, combining models of information
-    processing, learning, and behavioral adaptation. By examining responses across multiple stages,
-    we aim to better understand how individuals integrate feedback over time.
+    Nach 3 und 6 Monaten erhalten Sie per E-Mail einen Link zu weiteren Online-Befragungen.
+  </p>
+
+  <h3>Mögliche Belastungen</h3>
+  <p>
+    Die Teilnahme kann kurzfristige psychische Belastungen auslösen. Bei akuter Belastung wenden Sie sich bitte an
+    die Telefonseelsorge: 0800 111 0111 oder kontaktieren Sie uns: traumastudy2026@gmail.com
+  </p>
+
+  <h3>Datenschutz und Vertraulichkeit</h3>
+  <p>
+    Alle erhobenen Daten werden vertraulich, pseudonymisiert und anonymisiert verarbeitet. Kontaktdaten
+    werden getrennt von den Forschungsdaten gespeichert und nach Abschluss der Studie gelöscht.
+  </p>
+
+  <h3>Freiwilliger Teil der Studie</h3>
+  <p>
+    Möglichkeit, besonders belastende Ereignisse vertiefend zu beschreiben. Dauer: ca. 15 Minuten.
+    Teilnahme ist freiwillig und anonymisiert.
   </p>
 </section>
 
 <!-- FAQ -->
 <section id="faq">
-  <h2>Frequently Asked Questions</h2>
-
-  <h4>❓ I cannot access the study link</h4>
-  <p>
-    Make sure your browser allows pop-ups and location access if required. Chrome is recommended.
-  </p>
-
-  <h4>❓ The task does not load properly</h4>
-  <p>
-    Try refreshing the page, disabling browser extensions, or switching browsers.
-  </p>
-
-  <h4>❓ I made a mistake during the task</h4>
-  <p>
-    Don’t worry — the study accounts for errors. Continue as instructed unless told otherwise.
-  </p>
-
-  <h4>❓ Can I pause and continue later?</h4>
-  <p>
-    Yes, unless stated otherwise in the task instructions.
-  </p>
+  <h2>FAQ</h2>
+  <p><strong>Worum geht es in der Studie?</strong> Online-Studie zu Stressbewältigung in High-Risk-Berufen.</p>
+  <p><strong>Wen suchen wir?</strong> Personen in Berufen mit regelmäßig belastenden Situationen.</p>
+  <p><strong>Was erwartet Sie?</strong> EMA-Befragungen über mehrere Wochen plus längere Fragebögen.</p>
+  <p><strong>Was bieten wir?</strong> Einblicke in Ergebnisse, persönliche Profile, monetäre Vergütung.</p>
+  <p><strong>Warum machen wir das?</strong> Forschung zu Coping-Strategien, Verbesserung von Ausbildung und Interventionen.</p>
+  <p><strong>Wann beginnt die Studie?</strong> Frühjahr 2026</p>
 </section>
 
 <!-- ETHICS -->
 <section id="ethics">
-  <h2>Ethics Approval</h2>
+  <h2>Ethik & Genehmigungen</h2>
   <p>
-    This study has been reviewed and approved by the Institutional Review Board (IRB)
-    / Ethics Committee of <strong>Your University</strong>.
-  </p>
-
-  <p>
-    Approval Number: <strong>2025-PSY-042</strong><br>
-    Date of Approval: <strong>January 15, 2025</strong>
-  </p>
-
-  <p>
-    All procedures comply with the ethical standards of the Declaration of Helsinki.
-    Participation is voluntary and participants may withdraw at any time without penalty.
+    Die Studie wurde von der Ethikkommission der Universität des Saarlandes geprüft und genehmigt.
   </p>
 </section>
 
 <footer>
-  © 2026 Psychology Research Group · All rights reserved
+  © 2026 Universität des Saarlandes – Psychology Research Group · Alle Rechte vorbehalten
 </footer>
 
 </body>
 </html>
+
