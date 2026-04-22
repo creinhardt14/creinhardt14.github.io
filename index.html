@@ -125,22 +125,35 @@ img.responsive {
   color: #374151;
   margin-bottom: 2rem;
 }
-  
-/* Aktuelles box */
+
+/* Aktuelles */
 .aktuelles-box {
   max-width: 900px;
   margin: 1.5rem auto 0;
-  background: #fbbf24; /* warm yellow/orange */
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
   color: #1f2937;
-  padding: 0.8rem 1.2rem;
-  border-radius: 10px;
-  font-weight: 500;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  padding: 1.2rem 1.4rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.aktuelles-box strong {
-  margin-right: 0.5rem;
+.aktuelles-title {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
 }
+
+.aktuelles-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.3rem 0;
+}
+
+.icon {
+  font-size: 1.1rem;
+}
+  
 /* Signup section - schöner Kasten */
 .signup {
   background: var(--dark-blue);
@@ -216,11 +229,17 @@ footer {
 </nav>
 
 <div class="aktuelles-box">
-  <strong>Aktuelles:</strong> 
-   <p>
-Studienstart: 15.Mai 2026
-        <p>
-Anmeldungen sind bereits möglich. Schreiben Sie uns bei Interesse einfach eine E-Mail.
+  <div class="aktuelles-title">📢 Aktuelles</div>
+  
+  <div class="aktuelles-item">
+    <span class="icon">📅</span>
+    <span><strong>Studienstart:</strong> 15. Mai 2026</span>
+  </div>
+  
+  <div class="aktuelles-item">
+    <span class="icon">✉️</span>
+    <span>Anmeldungen sind bereits möglich – schreiben Sie uns einfach eine E-Mail.</span>
+  </div>
 </div>
   
 <section id="info">
