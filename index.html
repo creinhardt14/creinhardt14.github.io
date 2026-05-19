@@ -321,13 +321,27 @@ Mit Ihrer Teilnahme tragen Sie dazu bei, die psychologische Forschung praxisnah 
 </section>
 
 
-  <section id="signup">
+ <section id="signup">
   <div class="signup">
     <h2>Teilnahme</h2>
 
     <p>
-      Haben Sie Interesse, teilzunehmen? 
-      <div style="
+      Haben Sie Interesse, teilzunehmen? Schreiben Sie uns gern eine Email
+      oder geben Sie Ihre E-Mail-Adresse direkt hier an, um eine Einladung
+      zur Studie zu erhalten. Alternativ können Sie auch direkt über den QR-Code unten mit der Studie beginnen.
+    </p>
+
+    <form action="mailto:studie-oncall@uni-saarland.de?subject=Interesse an Studienteilnahme&body=Guten%20Tag,%0A%0Aich%20habe%20Interesse%20an%20einer%20Studienteilnahme."
+          method="post"
+          enctype="text/plain">
+
+      <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+      <button type="submit">Anmelden</button>
+    </form>
+  </div>
+
+  <!-- QR-Code Bereich -->
+  <div style="
     max-width: 500px;
     margin: 2rem auto 0;
     background: white;
@@ -335,30 +349,56 @@ Mit Ihrer Teilnahme tragen Sie dazu bei, die psychologische Forschung praxisnah 
     padding: 2rem;
     text-align: center;
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-">
+  ">
+    <h3 style="margin-top: 0; color: #355C7D;">
+      Direkt zur Studie
+    </h3>
 
-  <h3 style="margin-top: 0; color: #355C7D;">
-    Direkt zur Studie
-  </h3>
+    <p style="margin-bottom: 1.5rem;">
+      Scannen Sie den QR-Code, um direkt mit dem ersten Teil der Studie zu beginnen und den Fragebogen auszufüllen:
+    </p>
 
-  <p style="margin-bottom: 1.5rem;">
-    <strong>Teilnahme:</strong> Scannen Sie den QR-Code oder nutzen Sie den 
     <a href="https://www.soscisurvey.de/oncall2026/?q=base" target="_blank">
-      Link</a>, um direkt mit dem ersten Teil der Studie zu beginnen und den Fragebogen auszufüllen.
-  </p>
+      Fragebogen direkt öffnen
+    </a>
 
-  <img 
-    src="images/QR-Code.jpg" 
-    alt="QR-Code zur Studienteilnahme"
-    style="
-      width: 260px;
-      max-width: 85%;
-      border-radius: 14px;
-      background: white;
-    "
-  >
+    <div style="margin-top: 1rem;">
+      <img 
+        src="images/QR-Code.jpg" 
+        alt="QR-Code zur Studienteilnahme"
+        style="
+          width: 260px;
+          max-width: 85%;
+          border-radius: 14px;
+          background: white;
+        "
+      >
+    </div>
+  </div>
 
-</div>
+  <!-- Download-Bereich -->
+  <div class="downloads">
+    <h3>Informationsmaterial</h3>
+    <p>Hier finden Sie Informationsmaterialien zur Studie:</p>
+
+    <a href="docs/OnCall_Flyer.pdf" class="download-btn" download>
+      📄 Flyer zur Studie herunterladen
+    </a>
+
+    <a href="docs/OnCall_Studieninformation.pdf" class="download-btn" download>
+      📄 Infoblatt zur Studie herunterladen
+    </a>
+
+    <a href="docs/OnCall_SEMA3Instruction.pdf" class="download-btn" download>
+      📄 Instruktionen für SEMA3-App herunterladen
+    </a>
+
+    <a href="images/QR-Code.jpg" class="download-btn" download>
+      📄 QR-Code herunterladen
+    </a>
+  </div>
+   
+</section>
     
     <!-- Download-Bereich -->
 <div class="downloads">
