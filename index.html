@@ -150,6 +150,26 @@ img.responsive {
   margin: 0.3rem 0;
 }
 
+.recruitment-fill {
+  width: 39%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    #2563eb,
+    #60a5fa
+  );
+}
+
+.recruitment-bar {
+  height: 14px;
+  margin: .5rem 0;
+
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+  
 .icon {
   font-size: 1.1rem;
 }
@@ -236,22 +256,17 @@ footer {
     <span><strong>Studienstart:</strong> Die Studie ist gestartet!</span>
   </div>
 
-  <div class="aktuelles-item">
-  <span class="icon">👥</span>
-
-  <div class="participant-wrapper">
-    <strong>Anzahl der Teilnehmer:innen</strong>
-
-    <div class="participant-display">
-      <span class="participant-current">7</span>
-      <span class="participant-separator">/</span>
-      <span class="participant-target">350</span>
-    </div>
-
-    <div class="participant-date">
-      Stand Juni 2026
-    </div>
+  <div class="recruitment-box">
+  <div class="recruitment-header">
+    <span>Teilnehmer:innen</span>
+    <strong>7 / 350</strong>
   </div>
+
+  <div class="recruitment-bar">
+    <div class="recruitment-fill"></div>
+  </div>
+
+  <small>2 % des Rekrutierungsziels erreicht</small>
 </div>
   
   <div class="aktuelles-item" style="align-items: flex-start;">
