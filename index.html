@@ -294,18 +294,19 @@ img.responsive {
 
 .qr-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+  align-items: flex-start;   /* align at top */
   width: 100%;
-  gap: 1rem;
+  gap: 1.5rem;
+}
+
+.qr-text {
+  flex: 1;                  /* take remaining width */
 }
 
 .qr-code {
   width: 110px;
 
   background: white;
-
   padding: 6px;
 
   border: 1px solid #e5e7eb;
@@ -426,21 +427,24 @@ footer {
   <div class="aktuelles-item">
     <span class="icon">✉️</span>
 
-    <div class="item-content qr-content">
-      <div>
-        <strong>Teilnahme</strong><br>
-        Scannen Sie den QR-Code oder nutzen Sie den
-        <a href="https://www.soscisurvey.de/oncall2026/?q=base" target="_blank">
-          Direktlink
-        </a>.
-      </div>
+    <div class="qr-content">
 
-      <img
-        src="images/QR-Code.jpg"
-        alt="QR-Code zur Studie"
-        class="qr-code"
-      >
-    </div>
+  <div class="qr-text">
+    <strong>Teilnahme</strong><br>
+
+    Scannen Sie den QR-Code oder nutzen Sie den
+    <a href="https://www.soscisurvey.de/oncall2026/?q=base" target="_blank">
+      Direktlink</a>,
+    um unmittelbar mit der Studie zu beginnen.
+  </div>
+
+  <img
+    src="images/QR-Code.jpg"
+    alt="QR-Code zur Studie"
+    class="qr-code"
+  >
+
+</div>
   </div>
 
 </div>
